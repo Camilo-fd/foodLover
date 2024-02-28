@@ -94,3 +94,16 @@ header{
     justify-content: center;
     gap: 10px;
 }
+
+/* ------------------------------------------ */
+
+.contenedor_pagina3{
+    display: flex;
+    color: white;
+    align-items: center;
+}
+
+.imagen_pagina3{
+    display: flex;
+    justify-content: center;
+}
