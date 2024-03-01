@@ -1,4 +1,5 @@
 @import url(style.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 *{
     padding: 0;
@@ -6,41 +7,56 @@
     box-sizing: border-box;
 }
 
-body{
-    background: black;
+nav{
+    background-image: url(/storage/img/placeYourImageHere0.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 header{
     display: flex;
-    color: white;
     justify-content: space-between;
+    color: #fff;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .menus{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     width: 40%;
     align-items: center;
+    gap: 10%
+}
+
+#color{
+    color: #e58f00;
 }
 
 .imagen1{
     padding: 10px 0;
+    margin: 10px;
 }
 
 .opciones{
     display: flex;
     width: 40%;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 10%
 }
-
-/* ------------------------------------------ */
 
 .contenedor_pagina1{
     display: flex;
     color: white;
     align-items: center;
-    height: 700px;
+    height: 100vh;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .imagen_pagina1{
@@ -52,52 +68,66 @@ header{
 
 .contenido_pagina1{
     display: flex;
-    width: 50%;
-    height: 100%;
+    width: 30%;
+    height: 50%;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 10%;
+    font-size: 150%;
 }
 
 .h1_pagina1{
-    color: goldenrod;
+    color: #e58f00;
 }
 
 .boton_pagina1{
     display: flex;
-    background: goldenrod;
+    background: #e58f00;
     color: black;
+    width: 40%;
     border-radius: 5px;
     padding: 10px 20px;
+    justify-content: center;
+    padding: 15px;
 }
 
 /* ------------------------------------------ */
 
+main{
+    background: #17171e;
+    height: 100%;
+}
+
 .contenedor_pagina2{
     display: flex;
-    color: white;
     align-items: center;
-    height: 700px;
+    flex-direction: row;
+    color: #fff;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .imagen_pagina2{
     display: flex;
+    align-items: center;
+    width: 100%;
     justify-content: center;
-    width: 50%;
+    height: 100vh;
+    gap: 30px;
 }
 
 .contenido_pagina2{
     display: flex;
-    height: 100%;
-    width: 15%;
     flex-direction: column;
-    justify-content: center;
     gap: 10px;
+    width: 20%;
 }
 
 /* ------------------------------------------ */
 
-.contenedor_pagina3{
+/* .contenedor_pagina3{
     display: flex;
     color: white;
     align-items: center;
@@ -106,4 +136,66 @@ header{
 .imagen_pagina3{
     display: flex;
     justify-content: center;
+} */
+
+/* ------------------------------------------ */
+
+.pagina_4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 5%;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: x-large;
+}
+
+.imagenes_pagina4{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* ------------------------------------------ */
+
+.pagina_5{
+    display: flex;
+    background-image: url(/storage/img/placeYourImageHereOur0.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+}
+
+.contenedor_pagina5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.contenido_pagina5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    height: 55%;
+    color: #fff;
+    border: 5px solid #e58f00;
+    background: #17171e;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: x-large;
+    gap: 5%;
+    padding: 40px;
+    text-align: center;
 }
