@@ -7,20 +7,37 @@
     box-sizing: border-box;
 }
 
-nav{
+.fondo{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: absolute;
     background-image: url(/storage/img/placeYourImageHere0.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100vh;
+    opacity: 20%;
 }
-
 header{
     display: flex;
+    justify-content: space-evenly;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #323239;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    padding: 2%;
+}
+.encabezado{
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    color: #fff;
-    font-family: "Roboto Slab", serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
+    align-items: center;
+    width: 150vh;
+    z-index: 2;
 }
 
 .menus{
@@ -28,24 +45,33 @@ header{
     justify-content: center;
     width: 40%;
     align-items: center;
-    gap: 10%
+    gap: 10%;
+    z-index: 2;
 }
-
-#color{
-    color: #e58f00;
+a{
+    color: #fff;
+    justify-content: space-between;
+    text-decoration: none;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
-
 .imagen1{
     padding: 10px 0;
     margin: 10px;
+    z-index: 2;
 }
 
 .opciones{
     display: flex;
+    justify-content: center;
     width: 40%;
     align-items: center;
-    justify-content: center;
-    gap: 10%
+    gap: 10%;
+    z-index: 2;
+    text-decoration: none;
+    justify-content: space-between;
 }
 
 .contenedor_pagina1{
@@ -62,8 +88,12 @@ header{
 .imagen_pagina1{
     display: flex;
     justify-content: center;
+    position: relative;
     width: 50%;
-    height: 80%;
+    height: 70%;
+    object-fit: contain;
+    z-index: 2;
+    bottom: 10%;
 }
 
 .contenido_pagina1{
@@ -72,8 +102,12 @@ header{
     height: 50%;
     flex-direction: column;
     justify-content: center;
-    gap: 10%;
+    gap: 5%;
     font-size: 150%;
+    position: relative;
+    z-index: 2;
+    bottom: 10%;
+    margin-left: 5%;
 }
 
 .h1_pagina1{
@@ -89,6 +123,7 @@ header{
     padding: 10px 20px;
     justify-content: center;
     padding: 15px;
+    cursor: pointer;
 }
 
 /* ------------------------------------------ */
@@ -98,7 +133,7 @@ main{
     height: 100%;
 }
 
-.contenedor_pagina2{
+.pagina_2{
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -109,20 +144,25 @@ main{
     font-style: normal;
 }
 
-.imagen_pagina2{
+.contenedor_pagina2{
     display: flex;
+    flex-direction: row;
+    margin-bottom: 10%;
+    gap: 5%;
     align-items: center;
-    width: 100%;
-    justify-content: center;
-    height: 100vh;
-    gap: 30px;
+}
+
+.imagen_pagina2{
+    position: relative;
+    margin-left: 10%;
 }
 
 .contenido_pagina2{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 20%;
+    width: 35%;
+    font-size: xx-large;
 }
 
 /* ------------------------------------------ */
@@ -153,9 +193,14 @@ main{
     font-size: x-large;
 }
 
+.titulo_pagina4, .menu_pagina6{
+    color: #fff;
+}
+
 .imagenes_pagina4{
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
+    width: 80%;
     flex-wrap: wrap ;
     justify-content: center;
     align-items: center;
@@ -229,14 +274,14 @@ main{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 2%;
+    gap: 4%;
 }
 
 .caja{
     display: flex;
     justify-content: center;
     gap: 50px;
-    width: 90%;
+    width: 80%;
     height: 25%;
 }
 
@@ -267,10 +312,13 @@ main{
 .pagina_7{
     display: flex;
     flex-direction: column;
+    background: #e58f00;
+    height: 500px;
 }
 
 .contenido_pagina7{
     display: flex;
+    position: relative;
     align-items: center;
     gap: 5%;
     height: 100%;
@@ -282,6 +330,11 @@ main{
     justify-content: center;
     width: 25%;
     gap: 10px;
+    font-size: large;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .tit{
@@ -328,4 +381,71 @@ main{
     gap: 20px;
     height: 50px;
     width: 100%;
+    padding: 40px;
+}
+
+.iconos i{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: px;
+}
+
+
+.pagina_3{
+    padding-top: 50px;
+    height: 250vh;
+}
+
+.contenedor_pagina3{
+    height: 100%;
+    width: 100%;
+}
+
+.contenedor_pagina3 img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.contenedor_pagina3_imagen1, .contenedor_pagina3_imagen2, .contenedor_pagina3_imagen3{
+    position: relative;
+}
+
+.contenedor_pagina3_imagen1{
+    width: 25%;
+    height: 30%;
+    bottom: 89%;
+    margin-left: 75%;
+}
+
+.contenedor_pagina3_imagen2{
+    width: 55%;
+    height: 50%;
+    bottom: 80%;
+    margin-left: 45%;
+}
+
+.contenedor_pagina3_imagen3{
+    width: 30%;
+    height: 30%;
+    bottom: 115%;
+
+}
+
+.contenido_pagina3_texto{
+    position: relative;
+    display: flex;
+    width: 30%;
+    height: 20%;
+    gap: 3%;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    bottom: 180%;
+    margin-left: 15%;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: x-large;
 }

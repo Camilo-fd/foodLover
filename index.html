@@ -9,28 +9,26 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <nav>
+    <div class="fondo"></div>
+    <div class="container">
         <header> 
-            <div class="menus">
-                <a id="color">HOME</a>
-                <a>ABOUT</a>
-                <a>MENUS</a>
-                <a>OFFERS</a>
-            </div>
-            <div class="imagen1">
-                <img src="storage/img/logo.png" class="logo">
-            </div>
-            <div class="opciones">
-                <a>
-                    GALLERY
-                </a>
-                <a>
-                    CONTACT
-                </a>
-                <a>
-                    BLOG
-                </a>
-            </div>
+            <nav class="encabezado">
+                <div class="menus">
+                    <a href="#">HOME</a>
+                    <a href="#About Us" >ABOUT</a>
+                    <a href="#Menu">MENUS</a>
+                    <a href="#">OFFERS</a>
+                </div>
+                <div class="imagen1">
+                    <img src="storage/img/logo.png" class="logo">
+                </div>
+                <div class="opciones">
+                    <a href="#Gallery">GALLERY</a>
+                    <a href="#Contactos">CONTACT</a>
+                    <a>BLOG</a>
+                    <a href=""> </a>
+                </div>
+            </nav>
         </header>
         <div class="contenedor_pagina1">
             <div class="imagen_pagina1">
@@ -45,35 +43,43 @@
                 </div>    
             </div>
         </div>
-    </nav>
+    </div>
     <main>
-        <section class="pagina_2">
-            <div class="contenedor_pagina2">
-                <div class="imagen_pagina2">
-                    <img src="storage/img/placeYourImageHereGaleria0.png">
-                    <div class="contenido_pagina2">
-                        <h1 class="h1_pagina2">About Us</h1>
-                        <p class="p_pagina2">Lorem ipsum dolor sit amet consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis</p>
-                    </div>
+        <section class="pagina_3">
+            <div class="contenedor_pagina3">
+                <img src="storage/img/placeYourImageHereFood.png">
+                <div class="contenedor_pagina3_imagen1">
+                    <img src="storage/img/placeYourImageHereFood0.png">
+                </div>
+                <div class="contenedor_pagina3_imagen2">
+                    <img src="storage/img/placeYourImageHereFood1.png" alt="">
+                </div>
+                <div class="contenedor_pagina3_imagen3">
+                    <img src="storage/img/placeYourImageHereFood3.png" alt="">
+                </div>
+                <div class="contenido_pagina3_texto">
+                    <h2>Our Food Quality</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio ducimus ipsa exercitationem assumenda!
+                        Nemo exercitationem neque distinctio molestiae ducimus accusamus dolor,
+                        a perspiciatis id nulla saepe repudiandae, debitis, culpa laborum.</p>
                 </div>
             </div>
         </section>
-        <!-- <section class="pagina_3">
-            <div class="contenedor_pagina3">
-                <div class="imagen_pagina3">
-                    <img src="">
-                    <img src="">
-                    <img src="">
-                    <img src="">
+        <section class="pagina_2" id="About Us">
+            <div class="contenedor_pagina2">
+                <div class="imagen_pagina2">
+                    <img src="storage/img/placeYourImageHereGaleria0.png">
                 </div>
-                <div class="contenido_pagina3">
+                <div class="contenido_pagina2">
+                    <h1 class="h1_pagina2">About Us</h1>
+                    <p class="p_pagina2">Lorem ipsum dolor sit amet consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis</p>
                 </div>
             </div>
-        </section> -->
-        <section class="pagina_4">
-            <header>
+        </section>
+        <section class="pagina_4" id="Gallery">
+            <header class="titulo_pagina4">
                 <h3>Our Food Gallery</h3>
             </header>
             <article class="imagenes_pagina4">
@@ -100,7 +106,7 @@
                 </div>
             </article>
         </section>
-        <section class="pagina_6">
+        <section class="pagina_6" id="Menu">
             <header class="menu_pagina6">
                 <h3>Our Menu</h3>
             </header>
@@ -135,7 +141,9 @@
         </section>
         <section class="pagina_7">
             <article class="contenido_pagina7">
-                <img src="storage/img/placeYourImageHere5.png">
+                <div class="contenedor_imagen7">
+                    <img src="storage/img/placeYourImageHere5.png">
+                </div>
                 <div class="text">
                     <h4 class="tit">Enjoy Best Meal</h4>
                     <p class="parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -155,7 +163,7 @@
                 <a >CONTACT</a>
                 <a >LOCATION</a>
             </div>
-            <div class="iconos">
+            <div class="iconos" id="Contactos">
                 <i class='bx bxl-facebook-circle'></i>
                 <i class='bx bxl-twitter' ></i>
                 <i class='bx bxl-instagram' ></i>
